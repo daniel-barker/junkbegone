@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Junk Be Gone LLC Website
+
+This is the official website for Junk Be Gone LLC, a junk removal service business based in Indiana. The website is built using [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com).
+
+## Features
+
+- Responsive design that works on mobile, tablet, and desktop devices
+- Information about junk removal services offered
+- Contact form for requesting free estimates
+- Company information and contact details
+
+## Tech Stack
+
+- Next.js 15.3.3
+- React 19
+- Tailwind CSS 4
+- TypeScript
 
 ## Getting Started
 
@@ -6,19 +22,13 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can edit the pages by modifying files in the `app` directory. The pages auto-update as you edit the files.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a custom font from Vercel.
 
 ## Learn More
 
