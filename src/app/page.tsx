@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Add Google Fonts (for brush/dirty font)
-import { Roboto } from 'next/font/google';
 
 const brushFont = {
   fontFamily: '"Permanent Marker", "Brush Script MT", cursive',
