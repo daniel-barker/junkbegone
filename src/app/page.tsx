@@ -127,11 +127,11 @@ export default function Home() {
             <div className="text-lg md:text-xl font-bold text-white">Paul: 317-654-1715</div>
           </div>
           {/* Stickers */}
-          <div className="flex gap-3">
-            <span className="bg-[#e94e3f] text-white font-bold px-4 py-2 rounded-full text-sm shadow-md uppercase tracking-wide">Licensed</span>
-            <span className="bg-[#e94e3f] text-white font-bold px-4 py-2 rounded-full text-sm shadow-md uppercase tracking-wide">Locally Owned</span>
-            <span className="bg-[#e94e3f] text-white font-bold px-4 py-2 rounded-full text-sm shadow-md uppercase tracking-wide">Hauls Fast</span>
-          </div>
+          <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto items-center justify-center mt-4 md:mt-0">
+  <span className="bg-[#e94e3f] text-white font-bold px-6 py-2 rounded-full text-sm shadow-md uppercase tracking-wide w-full md:w-auto text-center">Licensed</span>
+  <span className="bg-[#e94e3f] text-white font-bold px-6 py-2 rounded-full text-sm shadow-md uppercase tracking-wide w-full md:w-auto text-center">Locally Owned</span>
+  <span className="bg-[#e94e3f] text-white font-bold px-6 py-2 rounded-full text-sm shadow-md uppercase tracking-wide w-full md:w-auto text-center">Hauls Fast</span>
+</div>
         </div>
       </footer>
     </div>
