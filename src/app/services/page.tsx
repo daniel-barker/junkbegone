@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="py-16">
-      <div className="max-w-7xl mx-auto px-[var(--spacing-container)]">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <h1 className="text-4xl font-bold mb-8 text-center">Our Services</h1>
         <p className="text-lg text-center max-w-3xl mx-auto mb-12">
-          Junk Be Gone LLC offers a wide range of junk removal services to meet your needs. 
+          Junk Be Gone LLC offers a wide range of junk removal services to meet your needs.
           We handle everything from furniture and appliances to yard debris and construction waste.
         </p>
 
@@ -26,9 +26,9 @@ export default function ServicesPage() {
             </div>
             <h2 className="text-2xl font-semibold mb-3">Furniture Removal</h2>
             <p className="text-gray-600 mb-4">
-              We remove all types of furniture including sofas, mattresses, tables, chairs, 
-              entertainment centers, and more. Whether you're replacing old furniture or 
-              clearing out an entire house, we've got you covered.
+              We remove all types of furniture including sofas, mattresses, tables, chairs,
+              entertainment centers, and more. Whether you&apos;re replacing old furniture or
+              clearing out an entire house, we&apos;ve got you covered.
             </p>
             <ul className="list-disc list-inside text-gray-600 mb-4">
               <li>Sofas and couches</li>
@@ -48,8 +48,8 @@ export default function ServicesPage() {
             </div>
             <h2 className="text-2xl font-semibold mb-3">Yard Debris Removal</h2>
             <p className="text-gray-600 mb-4">
-              We help clear your yard of debris, including branches, leaves, old fencing, 
-              landscaping materials, and more. Let us handle the heavy lifting so you can 
+              We help clear your yard of debris, including branches, leaves, old fencing,
+              landscaping materials, and more. Let us handle the heavy lifting so you can
               enjoy your outdoor space.
             </p>
             <ul className="list-disc list-inside text-gray-600 mb-4">
@@ -70,8 +70,8 @@ export default function ServicesPage() {
             </div>
             <h2 className="text-2xl font-semibold mb-3">Appliance Removal</h2>
             <p className="text-gray-600 mb-4">
-              We remove all types of appliances, large and small. From refrigerators and 
-              washing machines to microwaves and toasters, we'll take care of it all.
+              We remove all types of appliances, large and small. From refrigerators and
+              washing machines to microwaves and toasters, we&apos;ll take care of it all.
             </p>
             <ul className="list-disc list-inside text-gray-600 mb-4">
               <li>Refrigerators and freezers</li>
@@ -91,7 +91,7 @@ export default function ServicesPage() {
             </div>
             <h2 className="text-2xl font-semibold mb-3">Construction Debris</h2>
             <p className="text-gray-600 mb-4">
-              After a renovation or construction project, let us handle the cleanup. 
+              After a renovation or construction project, let us handle the cleanup.
               We remove drywall, lumber, tiles, and other construction materials.
             </p>
             <ul className="list-disc list-inside text-gray-600 mb-4">
@@ -105,7 +105,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="bg-gray-50 p-8 rounded-lg shadow-md mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Additional Services</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center">Additional Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <ul className="list-disc list-inside text-gray-600">
               <li>Garage cleanouts</li>

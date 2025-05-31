@@ -12,7 +12,7 @@ export default function ContactPage() {
         <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
         <p className="text-lg text-center max-w-3xl mx-auto mb-12">
           Have junk that needs to be removed? Contact us today for a free estimate or to schedule a pickup.
-          We're ready to help you reclaim your space!
+          We&apos;re ready to help you reclaim your space!
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
