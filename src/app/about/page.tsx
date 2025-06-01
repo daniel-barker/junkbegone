@@ -120,7 +120,7 @@ export default function AboutPage() {
         <section className="text-center">
           <h2 className="text-2xl font-semibold mb-4">Ready for Fast, Local Junk Removal in Indiana?</h2>
           <p className="mb-6 text-gray-700 max-w-xl mx-auto">
-            Whether you need a single appliance removed, yard waste cleaned up, or a whole house cleared out, Junk Be Gone LLC is here for you. See our <Link href="/services" className="text-[var(--color-jbg-red)] underline font-semibold">junk removal services</Link> or <Link href="/contact" className="text-[var(--color-jbg-dark)] underline font-semibold">contact our Indiana team</Link> to get started today!
+            Whether you need a single appliance removed, yard waste cleaned up, or a whole house cleared out, Junk Be Gone LLC is here for you. See our <Link href="/services" className="text-[var(--color-jbg-red)] underline font-semibold">junk removal services</Link> or <Link href="/contact" className="text-[var(--color-jbg-dark)] underline font-semibold">contact us</Link> to get started today!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="tel:3179935240" className="bg-[var(--color-jbg-red)] hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md transition-colors" aria-label="Call Collan for Indiana junk removal">Call Collan</a>

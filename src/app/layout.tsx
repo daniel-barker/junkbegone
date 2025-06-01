@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -105,6 +106,7 @@ export default function RootLayout({
         <main>{children}</main>
 
         <footer className="bg-[var(--color-jbg-dark)] text-white py-8">
+          <Analytics />
           <div className="max-w-7xl mx-auto px-[var(--spacing-container)]">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
@@ -127,7 +129,7 @@ export default function RootLayout({
                     href="tel:3179935240"
                     className="hover:text-[var(--color-jbg-red)] transition-colors"
                   >
-                    Collan: 317-993-5240
+                    <a href="tel:3179935240" className="hover:text-[var(--color-jbg-red)]">Collan: 317-993-5240</a>
                   </a>
                 </p>
                 <p className="mb-2">
@@ -135,7 +137,7 @@ export default function RootLayout({
                     href="tel:3176541715"
                     className="hover:text-[var(--color-jbg-red)] transition-colors"
                   >
-                    Paul: 317-654-1715
+                    <a href="tel:3176541715" className="hover:text-[var(--color-jbg-red)]">Paul: 317-654-1715</a>
                   </a>
                 </p>
               </div>
