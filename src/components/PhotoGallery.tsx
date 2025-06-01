@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useCallback, useEffect } from 'react';
-import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useCallback, useEffect } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface PhotoItem {
   src: string;
@@ -20,15 +20,18 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
 
   const closeGallery = useCallback(() => setSelectedIndex(null), []);
 
-  const navigate = useCallback((newDirection: number) => {
-    if (selectedIndex === null) return;
+  const navigate = useCallback(
+    (newDirection: number) => {
+      if (selectedIndex === null) return;
 
-    const newIndex = selectedIndex + newDirection;
-    if (newIndex >= 0 && newIndex < photos.length) {
-      setDirection(newDirection);
-      setSelectedIndex(newIndex);
-    }
-  }, [selectedIndex, photos.length]);
+      const newIndex = selectedIndex + newDirection;
+      if (newIndex >= 0 && newIndex < photos.length) {
+        setDirection(newDirection);
+        setSelectedIndex(newIndex);
+      }
+    },
+    [selectedIndex, photos.length]
+  );
 
   // Keyboard navigation
   useEffect(() => {
@@ -36,20 +39,20 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
       if (selectedIndex === null) return;
 
       switch (e.key) {
-        case 'ArrowLeft':
+        case "ArrowLeft":
           navigate(-1);
           break;
-        case 'ArrowRight':
+        case "ArrowRight":
           navigate(1);
           break;
-        case 'Escape':
+        case "Escape":
           closeGallery();
           break;
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedIndex, navigate, closeGallery]);
 
   return (
@@ -73,7 +76,7 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
               className="opacity-90"
               sizes="(max-width: 768px) 50vw, 33vw"
               placeholder="blur"
-              blurDataURL="/photos/placeholder.jpg"
+              blurDataURL="/images/placeholder.png"
             />
           </button>
         ))}
@@ -90,7 +93,7 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
           >
             <div
               className="relative w-full max-w-5xl max-h-[90vh] aspect-[4/3]"
-              onClick={e => e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()}
             >
               <motion.div
                 key={selectedIndex}

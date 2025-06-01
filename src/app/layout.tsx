@@ -129,7 +129,7 @@ export default function RootLayout({
                     href="tel:3179935240"
                     className="hover:text-[var(--color-jbg-red)] transition-colors"
                   >
-                    <a href="tel:3179935240" className="hover:text-[var(--color-jbg-red)]">Collan: 317-993-5240</a>
+                    Collan: 317-993-5240
                   </a>
                 </p>
                 <p className="mb-2">
@@ -137,7 +137,7 @@ export default function RootLayout({
                     href="tel:3176541715"
                     className="hover:text-[var(--color-jbg-red)] transition-colors"
                   >
-                    <a href="tel:3176541715" className="hover:text-[var(--color-jbg-red)]">Paul: 317-654-1715</a>
+                    Paul: 317-654-1715
                   </a>
                 </p>
               </div>
