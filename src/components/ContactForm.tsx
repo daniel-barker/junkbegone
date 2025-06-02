@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -218,7 +219,7 @@ export default function ContactForm() {
           message: data.error || "Failed to submit form. Please try again.",
         });
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         type: "error",
         message: "An error occurred. Please try again or call us directly.",
@@ -536,10 +537,12 @@ export default function ContactForm() {
               <div className="flex flex-wrap gap-3">
                 {imagePreviews.map((preview, index) => (
                   <div key={index} className="relative w-32 h-32 border border-gray-300 rounded-md overflow-hidden">
-                    <img
+                    <Image
                       src={preview}
                       alt={`Preview ${index + 1}`}
                       className="w-full h-full object-cover"
+                      width={128}
+                      height={128}
                     />
                     <button
                       type="button"
