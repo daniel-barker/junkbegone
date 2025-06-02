@@ -191,19 +191,13 @@ export default function RootLayout({
           </div>
         </footer>
 
-        {/* Sticky phone bar for mobile */}
-        <div className="md:hidden fixed bottom-0 left-0 right-0 bg-[var(--color-jbg-dark)] text-white py-2 px-4 flex justify-around z-50">
+        {/* Sticky quote button for mobile */}
+        <div className="md:hidden fixed bottom-0 left-0 right-0 bg-[var(--color-jbg-dark)] text-white py-3 px-4 flex justify-center z-50">
           <a
-            href="tel:3179935240"
-            className="bg-[var(--color-jbg-red)] text-white px-4 py-2 rounded-md font-medium"
+            href="/contact"
+            className="bg-[var(--color-jbg-red)] text-white px-6 py-3 rounded-md font-medium text-center w-full max-w-xs flex items-center justify-center"
           >
-            Call Collan
-          </a>
-          <a
-            href="tel:3176541715"
-            className="bg-[var(--color-jbg-red)] text-white px-4 py-2 rounded-md font-medium"
-          >
-            Call Paul
+            Get a Free Quote
           </a>
         </div>
       </body>
