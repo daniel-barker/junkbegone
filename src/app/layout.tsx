@@ -180,9 +180,12 @@ export default function RootLayout({
               </div>
             </div>
             <div className="mt-8 pt-4 border-t border-gray-700 text-center">
-              <p>
+              <p className="mb-2">
                 &copy; {new Date().getFullYear()} Junk Be Gone LLC. All rights
                 reserved.
+              </p>
+              <p className="text-sm text-gray-400">
+                We don&apos;t sell or share your data. Your info is only used to provide junk removal services.
               </p>
             </div>
           </div>

@@ -578,6 +578,10 @@ export default function ContactForm() {
               {submitStatus.message}
             </div>
           )}
+          
+          <p className="mt-4 text-xs text-gray-500 text-center">
+            By submitting this form, you consent to having your info securely stored and used for scheduling junk removal services.
+          </p>
         </div>
       </form>
     </div>
