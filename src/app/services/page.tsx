@@ -9,24 +9,24 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="py-16">
+    <div className="py-16 bg-[#222] text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <h1 className="text-4xl font-bold mb-8 text-center">Our Services</h1>
-        <p className="text-lg text-center max-w-3xl mx-auto mb-12">
+        <h1 className="text-4xl font-bold mb-8 text-center text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>Our Services</h1>
+        <p className="text-lg text-center max-w-3xl mx-auto mb-12 text-gray-300">
           Junk Be Gone LLC offers a wide range of junk removal services to meet
           your needs. We handle everything from furniture and appliances to yard
           debris and construction waste.
         </p>
 
-        <div className="bg-amber-50 border border-amber-200 p-6 rounded-lg mb-8">
-          <h2 className="text-xl font-semibold mb-3">
+        <div className="bg-[#2b2b2b] border-2 border-[#e94e3f] p-6 rounded-lg mb-8">
+          <h2 className="text-xl font-semibold mb-3 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>
             Important Pricing Factors
           </h2>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-300 mb-4">
             To provide you with the most accurate quote, we consider several
             factors:
           </p>
-          <ul className="list-disc list-inside text-gray-600 mb-4">
+          <ul className="list-disc list-inside text-gray-300 mb-4">
             <li>Presence and number of stairs</li>
             <li>Item location (upstairs, basement, backyard, etc.)</li>
             <li>Extra heavy items (pianos, safes, concrete, etc.)</li>
@@ -36,15 +36,15 @@ export default function ServicesPage() {
               each)
             </li>
           </ul>
-          <p className="text-gray-600 italic">
+          <p className="text-gray-300 italic">
             Photos of the items help us provide more accurate quotes!
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {/* Service 1 */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[var(--color-jbg-red)] text-white rounded-full">
+          <div className="bg-[#191919] p-8 rounded-lg shadow-md border-2 border-[#e94e3f]">
+            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[#e94e3f] text-white rounded-full shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
@@ -60,14 +60,14 @@ export default function ServicesPage() {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-semibold mb-3">Furniture Removal</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-2xl font-semibold mb-3 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>Furniture Removal</h2>
+            <p className="text-gray-300 mb-4">
               We remove all types of furniture including sofas, mattresses,
               tables, chairs, entertainment centers, and more. Whether
               you&apos;re replacing old furniture or clearing out an entire
               house, we&apos;ve got you covered.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-4">
+            <ul className="list-disc list-inside text-gray-300 mb-4">
               <li>Sofas and couches</li>
               <li>Mattresses and box springs</li>
               <li>Tables and chairs</li>
@@ -77,8 +77,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Service 2 */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[var(--color-jbg-red)] text-white rounded-full">
+          <div className="bg-[#191919] p-8 rounded-lg shadow-md border-2 border-[#e94e3f]">
+            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[#e94e3f] text-white rounded-full shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
@@ -94,13 +94,13 @@ export default function ServicesPage() {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-semibold mb-3">Yard Debris Removal</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-2xl font-semibold mb-3 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>Yard Debris Removal</h2>
+            <p className="text-gray-300 mb-4">
               We help clear your yard of debris, including branches, leaves, old
               fencing, landscaping materials, and more. Let us handle the heavy
               lifting so you can enjoy your outdoor space.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-4">
+            <ul className="list-disc list-inside text-gray-300 mb-4">
               <li>Tree branches and stumps</li>
               <li>Leaves and grass clippings</li>
               <li>Old fencing and decking</li>
@@ -110,8 +110,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Service 3 */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[var(--color-jbg-red)] text-white rounded-full">
+          <div className="bg-[#191919] p-8 rounded-lg shadow-md border-2 border-[#e94e3f]">
+            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[#e94e3f] text-white rounded-full shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
@@ -127,13 +127,13 @@ export default function ServicesPage() {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-semibold mb-3">Appliance Removal</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-2xl font-semibold mb-3 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>Appliance Removal</h2>
+            <p className="text-gray-300 mb-4">
               We remove all types of appliances, large and small. From
               refrigerators and washing machines to microwaves and toasters,
               we&apos;ll take care of it all.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-4">
+            <ul className="list-disc list-inside text-gray-300 mb-4">
               <li>Refrigerators and freezers</li>
               <li>Washers and dryers</li>
               <li>Stoves and ovens</li>
@@ -143,8 +143,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Service 4 */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[var(--color-jbg-red)] text-white rounded-full">
+          <div className="bg-[#191919] p-8 rounded-lg shadow-md border-2 border-[#e94e3f]">
+            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[#e94e3f] text-white rounded-full shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
@@ -160,13 +160,13 @@ export default function ServicesPage() {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-semibold mb-3">Construction Debris</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-2xl font-semibold mb-3 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>Construction Debris</h2>
+            <p className="text-gray-300 mb-4">
               After a renovation or construction project, let us handle the
               cleanup. We remove drywall, lumber, tiles, and other construction
               materials.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-4">
+            <ul className="list-disc list-inside text-gray-300 mb-4">
               <li>Drywall and plaster</li>
               <li>Lumber and wood scraps</li>
               <li>Tiles and flooring</li>
@@ -178,8 +178,8 @@ export default function ServicesPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Service 5 */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[var(--color-jbg-red)] text-white rounded-full">
+          <div className="bg-[#191919] p-8 rounded-lg shadow-md border-2 border-[#e94e3f]">
+            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[#e94e3f] text-white rounded-full shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
@@ -195,12 +195,12 @@ export default function ServicesPage() {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-semibold mb-3">Electronics Removal</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-2xl font-semibold mb-3 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>Electronics Removal</h2>
+            <p className="text-gray-300 mb-4">
               We safely dispose of all types of electronics, ensuring they are
               recycled properly when possible.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-4">
+            <ul className="list-disc list-inside text-gray-300 mb-4">
               <li>TVs and monitors</li>
               <li>Computers and laptops</li>
               <li>Printers and office equipment</li>
@@ -210,8 +210,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Service 6 */}
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[var(--color-jbg-red)] text-white rounded-full">
+          <div className="bg-[#191919] p-8 rounded-lg shadow-md border-2 border-[#e94e3f]">
+            <div className="w-16 h-16 mb-4 flex items-center justify-center bg-[#e94e3f] text-white rounded-full shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8"
@@ -227,12 +227,12 @@ export default function ServicesPage() {
                 />
               </svg>
             </div>
-            <h2 className="text-2xl font-semibold mb-3">Specialty Items</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-2xl font-semibold mb-3 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>Specialty Items</h2>
+            <p className="text-gray-300 mb-4">
               We handle various specialty items that require specific disposal
               methods.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-4">
+            <ul className="list-disc list-inside text-gray-300 mb-4">
               <li>Tires</li>
               <li>Items containing freon (additional fee applies)</li>
               <li>Heavy equipment</li>
@@ -242,25 +242,25 @@ export default function ServicesPage() {
           </div>
         </div>
 
-        <div className="bg-gray-50 p-8 rounded-lg shadow-md mb-12">
-          <h2 className="text-2xl font-semibold mb-4 text-center">
+        <div className="bg-[#232323] p-8 rounded-lg shadow-md mb-12 border-2 border-[#e94e3f]">
+          <h2 className="text-2xl font-semibold mb-4 text-center text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>
             Additional Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-3">Property Cleanouts</h3>
-              <ul className="list-disc list-inside text-gray-600">
+            <div className="bg-[#2b2b2b] p-6 rounded-lg border border-[#e94e3f]">
+              <h3 className="text-xl font-semibold mb-3 text-[#e94e3f]">Property Cleanouts</h3>
+              <ul className="list-disc list-inside text-gray-300">
                 <li>Garage cleanouts</li>
                 <li>Basement cleanouts</li>
                 <li>Attic cleanouts</li>
                 <li>Storage unit cleanouts</li>
               </ul>
             </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3">
+            <div className="bg-[#2b2b2b] p-6 rounded-lg border border-[#e94e3f]">
+              <h3 className="text-xl font-semibold mb-3 text-[#e94e3f]">
                 Specialized Services
               </h3>
-              <ul className="list-disc list-inside text-gray-600">
+              <ul className="list-disc list-inside text-gray-300">
                 <li>Hoarding situation cleanouts</li>
                 <li>Estate cleanouts</li>
                 <li>Foreclosure cleanouts</li>
@@ -270,20 +270,20 @@ export default function ServicesPage() {
           </div>
         </div>
 
-        <div className="text-center">
-          <h2 className="text-2xl font-semibold mb-6">
+        <div className="text-center bg-[#191919] p-8 rounded-lg shadow-md border-2 border-[#e94e3f]">
+          <h2 className="text-2xl font-semibold mb-6 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>
             Ready to get rid of your junk?
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="tel:3179935240"
-              className="bg-[var(--color-jbg-red)] hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md transition-colors"
+              className="bg-[#e94e3f] hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-colors"
             >
               Call Now: 317-993-5240
             </a>
             <Link
               href="/contact"
-              className="bg-[var(--color-jbg-dark)] hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-md transition-colors"
+              className="bg-[#333] hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full shadow-lg border border-[#e94e3f] transition-colors"
             >
               Get a Free Estimate
             </Link>

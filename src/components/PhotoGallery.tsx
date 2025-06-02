@@ -55,6 +55,29 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [selectedIndex, navigate, closeGallery]);
 
+  // Disable body scrolling when lightbox is open
+  useEffect(() => {
+    if (selectedIndex !== null) {
+      // Save the current scroll position
+      const scrollY = window.scrollY;
+      
+      // Add styles to prevent scrolling
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
+    } else {
+      // Re-enable scrolling and restore position when lightbox is closed
+      const scrollY = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      
+      if (scrollY) {
+        window.scrollTo(0, parseInt(scrollY.replace('-', '')) || 0);
+      }
+    }
+  }, [selectedIndex]);
+
   return (
     <>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">

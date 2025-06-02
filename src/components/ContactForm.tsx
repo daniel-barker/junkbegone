@@ -230,13 +230,15 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto">
-      <h2 className="text-2xl font-semibold mb-6">Get a Free Estimate</h2>
-      <form className="space-y-6" onSubmit={handleSubmit}>
+    <div className="bg-[#2b2b2b] p-8 rounded-lg shadow-md border-2 border-[#e94e3f]">
+      <h2 className="text-2xl font-semibold mb-6 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>
+        Get a Free Estimate
+      </h2>
+      <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Full Name
           </label>
@@ -244,7 +246,7 @@ export default function ContactForm() {
             type="text"
             id="name"
             name="name"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-jbg-red)]"
+            className="w-full px-4 py-2 border border-[#e94e3f] rounded-md bg-[#333] text-white focus:outline-none focus:ring-2 focus:ring-[#e94e3f]"
             placeholder="Your name"
             required
             value={formData.name}
@@ -255,7 +257,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Email Address
           </label>
@@ -264,8 +266,8 @@ export default function ContactForm() {
             id="email"
             name="email"
             className={`w-full px-4 py-2 border ${
-              validationErrors.email ? "border-red-500" : "border-gray-300"
-            } rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-jbg-red)]`}
+              validationErrors.email ? "border-red-500" : "border-[#e94e3f]"
+            } rounded-md focus:outline-none focus:ring-2 focus:ring-[#e94e3f]`}
             placeholder="Your email address"
             required
             value={formData.email}
@@ -295,7 +297,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="phone"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Phone Number
           </label>
@@ -304,8 +306,8 @@ export default function ContactForm() {
             id="phone"
             name="phone"
             className={`w-full px-4 py-2 border ${
-              validationErrors.phone ? "border-red-500" : "border-gray-300"
-            } rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-jbg-red)]`}
+              validationErrors.phone ? "border-red-500" : "border-[#e94e3f]"
+            } rounded-md focus:outline-none focus:ring-2 focus:ring-[#e94e3f]`}
             placeholder="(XXX) XXX-XXXX"
             required
             value={formData.phone}
@@ -336,7 +338,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="address"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Address
           </label>
@@ -344,7 +346,7 @@ export default function ContactForm() {
             type="text"
             id="address"
             name="address"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-jbg-red)]"
+            className="w-full px-4 py-2 border border-[#e94e3f] rounded-md bg-[#333] text-white focus:outline-none focus:ring-2 focus:ring-[#e94e3f]"
             placeholder="Where the junk is located"
             value={formData.address}
             onChange={(e) =>
@@ -356,7 +358,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="description"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Description of Items
           </label>
@@ -364,7 +366,7 @@ export default function ContactForm() {
             id="description"
             name="description"
             rows={4}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-jbg-red)]"
+            className="w-full px-4 py-2 border border-[#e94e3f] rounded-md bg-[#333] text-white focus:outline-none focus:ring-2 focus:ring-[#e94e3f]"
             placeholder="Please describe the items you need removed"
             required
             value={formData.description}
@@ -376,12 +378,12 @@ export default function ContactForm() {
 
         <div className="space-y-4">
           <div className="flex items-start">
-            <div className="flex items-center h-5">
+            <div className="flex h-5 items-center text-white">
               <input
                 id="hasStairs"
                 name="hasStairs"
                 type="checkbox"
-                className="focus:ring-[var(--color-jbg-red)] h-4 w-4 text-[var(--color-jbg-red)] border-gray-300 rounded"
+                className="h-4 w-4 rounded border-[#e94e3f] bg-[#333] text-[#e94e3f] focus:ring-[#e94e3f]"
                 checked={formData.hasStairs}
                 onChange={(e) =>
                   setFormData({ ...formData, hasStairs: e.target.checked })
@@ -391,7 +393,7 @@ export default function ContactForm() {
             <div className="ml-3">
               <label
                 htmlFor="hasStairs"
-                className="text-sm font-medium text-gray-700"
+                className="text-sm font-medium text-white"
               >
                 Are there stairs?
               </label>
@@ -401,14 +403,14 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="itemLocation"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-white mb-1"
             >
               Where are the items located?
             </label>
             <select
               id="itemLocation"
               name="itemLocation"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-jbg-red)]"
+              className="w-full px-4 py-2 border border-[#e94e3f] rounded-md bg-[#333] text-white focus:outline-none focus:ring-2 focus:ring-[#e94e3f]"
               value={formData.itemLocation}
               onChange={(e) =>
                 setFormData({ ...formData, itemLocation: e.target.value })
@@ -428,12 +430,12 @@ export default function ContactForm() {
 
           <div className="space-y-2">
             <div className="flex items-start">
-              <div className="flex items-center h-5">
+              <div className="flex h-5 items-center text-white">
                 <input
                   id="hasHeavyItems"
                   name="hasHeavyItems"
                   type="checkbox"
-                  className="focus:ring-[var(--color-jbg-red)] h-4 w-4 text-[var(--color-jbg-red)] border-gray-300 rounded"
+                  className="h-4 w-4 rounded border-[#e94e3f] bg-[#333] text-[#e94e3f] focus:ring-[#e94e3f]"
                   checked={formData.hasHeavyItems}
                   onChange={(e) => {
                     setFormData({
@@ -449,7 +451,7 @@ export default function ContactForm() {
               <div className="ml-3">
                 <label
                   htmlFor="hasHeavyItems"
-                  className="text-sm font-medium text-gray-700"
+                  className="text-sm font-medium text-white"
                 >
                   Is there anything extremely heavy? (Safes, pianos, concrete, etc)
                 </label>
@@ -462,7 +464,7 @@ export default function ContactForm() {
                   type="text"
                   id="heavyItemsDescription"
                   name="heavyItemsDescription"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-jbg-red)]"
+                  className="w-full px-4 py-2 border border-[#e94e3f] rounded-md bg-[#333] text-white focus:outline-none focus:ring-2 focus:ring-[#e94e3f]"
                   placeholder="Please describe the heavy items"
                   value={formData.heavyItemsDescription}
                   onChange={(e) =>
@@ -479,14 +481,14 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="itemsBagged"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-white mb-1"
             >
               Are the items bagged or would you like us to bag them?
             </label>
             <select
               id="itemsBagged"
               name="itemsBagged"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-jbg-red)]"
+              className="w-full px-4 py-2 border border-gray-600 rounded-md bg-[#333] text-white focus:outline-none focus:ring-2 focus:ring-[var(--color-jbg-red)]"
               value={formData.itemsBagged}
               onChange={(e) =>
                 setFormData({ ...formData, itemsBagged: e.target.value })
@@ -502,12 +504,12 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <p className="block text-sm font-medium text-gray-700 mb-3">
+          <p className="block text-sm font-medium text-white mb-3">
             Please include photos of the items you need removed (optional but recommended)
           </p>
           <label
             htmlFor="image"
-            className="block text-sm font-medium text-gray-700 mb-1"
+            className="block text-sm font-medium text-white mb-1"
           >
             Upload Photos (Optional)
           </label>
@@ -518,25 +520,25 @@ export default function ContactForm() {
               name="image"
               accept="image/jpeg,image/png,image/webp"
               multiple
-              className="w-full text-sm text-gray-500
+              className="w-full text-sm text-gray-400
                 file:mr-4 file:py-2 file:px-4
                 file:rounded-md file:border-0
                 file:text-sm file:font-semibold
-                file:bg-red-50 file:text-[var(--color-jbg-red)]
-                hover:file:bg-red-100"
+                file:bg-[#444] file:text-[#e94e3f]
+                hover:file:bg-[#555]"
               onChange={handleImageChange}
             />
           </div>
-          <p className="text-xs text-gray-500 mt-1">You can upload up to 5 images (max 5MB each)</p>
+          <p className="text-xs text-gray-400 mt-1">You can upload up to 5 images (max 5MB each)</p>
           {imageError && (
             <p className="text-red-500 text-sm mt-1">{imageError}</p>
           )}
           {imagePreviews.length > 0 && (
             <div className="mt-3">
-              <p className="text-sm text-gray-500 mb-2">Previews:</p>
+              <p className="text-sm text-gray-400 mb-2">Previews:</p>
               <div className="flex flex-wrap gap-3">
                 {imagePreviews.map((preview, index) => (
-                  <div key={index} className="relative w-32 h-32 border border-gray-300 rounded-md overflow-hidden">
+                  <div key={index} className="relative w-32 h-32 border border-gray-600 rounded-md overflow-hidden bg-[#333]">
                     <Image
                       src={preview}
                       alt={`Preview ${index + 1}`}
@@ -546,7 +548,7 @@ export default function ContactForm() {
                     />
                     <button
                       type="button"
-                      className="absolute top-1 right-1 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center"
+                      className="absolute top-1 right-1 bg-[#e94e3f] text-white rounded-full w-6 h-6 flex items-center justify-center"
                       onClick={() => removeImage(index)}
                     >
                       ×
@@ -561,7 +563,7 @@ export default function ContactForm() {
         <div>
           <button
             type="submit"
-            className="w-full bg-[var(--color-jbg-red)] hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+            className="w-full bg-[#e94e3f] hover:bg-red-600 text-white font-bold py-3 px-6 rounded-md transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Submitting..." : "Submit Request"}
@@ -579,7 +581,7 @@ export default function ContactForm() {
             </div>
           )}
           
-          <p className="mt-4 text-xs text-gray-500 text-center">
+          <p className="mt-4 text-xs text-gray-400 text-center">
             By submitting this form, you consent to having your info securely stored and used for scheduling junk removal services.
           </p>
         </div>

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="py-16">
+    <div className="py-16 bg-[#222] text-white">
       <div className="max-w-7xl mx-auto px-[var(--spacing-container)]">
-        <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
-        <p className="text-lg text-center max-w-3xl mx-auto mb-12">
+        <h1 className="text-4xl font-bold mb-8 text-center text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>Contact Us</h1>
+        <p className="text-lg text-center max-w-3xl mx-auto mb-12 text-gray-300">
           Have junk that needs to be removed? Contact us today for a free
           estimate or to schedule a pickup. We&apos;re ready to help you reclaim
           your space!
@@ -24,8 +24,8 @@ export default function ContactPage() {
 
           {/* Contact Information */}
           <div>
-            <div className="bg-white p-8 rounded-lg shadow-md mb-8">
-              <h2 className="text-2xl font-semibold mb-6">
+            <div className="bg-[#2b2b2b] p-8 rounded-lg shadow-md mb-8 border-2 border-[#e94e3f]">
+              <h2 className="text-2xl font-semibold mb-6 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>
                 Contact Information
               </h2>
               <div className="space-y-4">
@@ -47,19 +47,19 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <p className="text-lg font-medium">Phone</p>
-                    <p className="text-gray-600">
+                    <p className="text-lg font-medium text-white">Phone</p>
+                    <p className="text-gray-300">
                       <a
                         href="tel:3179935240"
-                        className="hover:text-[var(--color-jbg-red)]"
+                        className="hover:text-[#e94e3f]"
                       >
                         Collan: 317-993-5240
                       </a>
                     </p>
-                    <p className="text-gray-600">
+                    <p className="text-gray-300">
                       <a
                         href="tel:3176541715"
-                        className="hover:text-[var(--color-jbg-red)]"
+                        className="hover:text-[#e94e3f]"
                       >
                         Paul: 317-654-1715
                       </a>
@@ -85,10 +85,10 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <p className="text-lg font-medium">Business Hours</p>
-                    <p className="text-gray-600">Monday - Friday: 8am - 6pm</p>
-                    <p className="text-gray-600">Saturday: 9am - 4pm</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
+                    <p className="text-lg font-medium text-white">Business Hours</p>
+                    <p className="text-gray-300">Monday - Friday: 8am - 6pm</p>
+                    <p className="text-gray-300">Saturday: 9am - 4pm</p>
+                    <p className="text-gray-300">Sunday: Closed</p>
                   </div>
                 </div>
 
@@ -110,8 +110,8 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <p className="text-lg font-medium">Service Area</p>
-                    <p className="text-gray-600">
+                    <p className="text-lg font-medium text-white">Service Area</p>
+                    <p className="text-gray-300">
                       Indianapolis and surrounding areas
                     </p>
                   </div>
@@ -135,11 +135,11 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
-          <h2 className="text-2xl font-semibold mb-4">
+        <div className="bg-[#191919] p-8 rounded-lg shadow-md text-center border-2 border-[#e94e3f]">
+          <h2 className="text-2xl font-semibold mb-4 text-[#e94e3f]" style={{ fontFamily: "Impact, Arial Black, sans-serif" }}>
             Need Immediate Assistance?
           </h2>
-          <p className="text-lg mb-6">
+          <p className="text-lg mb-6 text-gray-300">
             Call us directly for same-day service when available.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
