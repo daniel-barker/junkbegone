@@ -3,7 +3,19 @@ import { NextResponse } from 'next/server';
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    const { name, email, phone, address, description } = data;
+    const { 
+      name, 
+      email, 
+      phone, 
+      address, 
+      description, 
+      hasStairs,
+      itemLocation,
+      hasHeavyItems,
+      heavyItemsDescription,
+      itemsBagged,
+      images 
+    } = data;
 
     // Validate the form data
     if (!name || !email || !phone || !description) {
@@ -23,11 +35,17 @@ export async function POST(request: Request) {
       phone,
       address: address || 'Not provided',
       description,
+      hasStairs: hasStairs || false,
+      itemLocation: itemLocation || 'Not specified',
+      hasHeavyItems: hasHeavyItems || false,
+      heavyItemsDescription: heavyItemsDescription || '',
+      itemsBagged: itemsBagged || 'Not specified',
       timestamp,
+      hasImages: images && images.length > 0,
+      imageCount: images ? images.length : 0
     };
 
     // Send data to Google Sheets Web App
-    // Replace this URL with your actual Google Apps Script Web App URL after deployment
     const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL || '';
     
     if (!GOOGLE_SCRIPT_URL) {
@@ -39,22 +57,28 @@ export async function POST(request: Request) {
     }
 
     try {
-      // Send data to Google Sheets
+      // Include image data if available
+      const googleScriptData = {
+        ...formData,
+        images: images || []
+      };
+      
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(googleScriptData),
       });
-
-      if (!response.ok) {
-        throw new Error(`Failed to submit to Google Sheets: ${response.statusText}`);
+      
+      if (response.ok) {
+        console.log('Successfully sent to Google Sheets with image data');
+      } else {
+        console.error('Failed to send to Google Sheets:', await response.text());
       }
-
+      
       // Log success
-      console.log('Form submission sent to Google Sheets successfully');
-      console.log(`Data sent: ${JSON.stringify(formData)}`);
+      console.log(`Form submission sent with data: ${JSON.stringify(formData)}`);
       console.log('Google Sheets will automatically send email notifications to collan@junkbegone317.com and paul@junkbegone317.com');
 
     } catch (error) {
