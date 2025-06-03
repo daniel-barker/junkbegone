@@ -26,11 +26,7 @@ export default function Home() {
       alt: "Garage during the cleanup process",
       caption: "Making Progress: Garage Cleanout in Action",
     },
-    {
-      src: "/images/jobs/gravel-bed-cleared-sideyard-indianapolis-1.jpeg",
-      alt: "Side yard cleared of gravel and debris",
-      caption: "Side Yard Transformation: Heavy Material Removal",
-    },
+
     {
       src: "/images/jobs/junk-hauling-truck-loaded-junk-be-gone-indianapolis.jpg",
       alt: "Truck loaded with removed items",
@@ -60,6 +56,11 @@ export default function Home() {
       src: "/images/jobs/junk-be-gone-basement-cleanout-before-junk-removal-indianapolis.jpg",
       alt: "Basement before cleanup showing accumulated items",
       caption: "Before: Basement Ready for a Fresh Start",
+    },
+    {
+      src: "/images/jobs/gravel-bed-cleared-sideyard-indianapolis-1.jpeg",
+      alt: "Side yard cleared of gravel and debris",
+      caption: "Side Yard Transformation: Heavy Material Removal",
     },
     {
       src: "/images/jobs/gravel-haulaway-junk-removal-indianapolis.jpg.jpg",
@@ -125,39 +126,15 @@ export default function Home() {
               Serving Indianapolis & Surrounding Areas
             </span>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <a
-              href="mailto:collan@junkbegone317.com?subject=Junk%20Photo%20Quote"
-              className="flex items-center gap-2 bg-white hover:bg-gray-200 text-[#2b2b2b] font-bold py-3 px-6 rounded-full text-lg shadow-lg transition-colors"
-            >
-              <span role="img" aria-label="photo">
-                📷
-              </span>{" "}
-              Send a Photo
-            </a>
+          <div className="flex items-center justify-center">
             <a
               href="/contact"
-              className="flex items-center gap-2 bg-[#e94e3f] hover:bg-[#c72e1c] text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition-colors"
+              className="flex items-center gap-2 bg-[#e94e3f] hover:bg-[#c72e1c] text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg transition-colors w-full max-w-md"
             >
-              <span role="img" aria-label="envelope">
-                ✉️
+              <span role="img" aria-label="quote">
+                💬
               </span>{" "}
-              Contact Us
-            </a>
-          </div>
-          <div className="text-sm text-gray-300 mt-4">
-            <a
-              href="tel:3179935240"
-              className="hover:text-[var(--color-jbg-red)]"
-            >
-              <span className="font-bold">Collan:</span> 317-993-5240
-            </a>{" "}
-            &nbsp;{" "}
-            <a
-              href="tel:3176541715"
-              className="hover:text-[var(--color-jbg-red)]"
-            >
-              <span className="font-bold">Paul:</span> 317-654-1715
+              Get a Free Quote
             </a>
           </div>
         </div>

@@ -64,8 +64,8 @@ export default function RootLayout({
                 />
               </Link>
             </div>
-            <nav>
-              <ul className="flex space-x-6">
+            <nav className="flex items-center">
+              <ul className="flex space-x-6 mr-4">
                 <li>
                   <Link
                     href="/"
@@ -99,6 +99,12 @@ export default function RootLayout({
                   </Link>
                 </li>
               </ul>
+              <Link
+                href="/contact"
+                className="hidden md:flex items-center bg-[var(--color-jbg-red)] hover:bg-[#c72e1c] text-white px-4 py-2 rounded-md font-medium transition-colors"
+              >
+                Get a Free Quote
+              </Link>
             </nav>
           </div>
         </header>
@@ -132,7 +138,7 @@ export default function RootLayout({
                     Collan: 317-993-5240
                   </a>
                 </p>
-                <p className="mb-2">
+                <p className="mb-4">
                   <a
                     href="tel:3176541715"
                     className="hover:text-[var(--color-jbg-red)] transition-colors"
@@ -140,6 +146,12 @@ export default function RootLayout({
                     Paul: 317-654-1715
                   </a>
                 </p>
+                <Link
+                  href="/contact"
+                  className="inline-block bg-[var(--color-jbg-red)] hover:bg-[#c72e1c] text-white px-4 py-2 rounded-md font-medium transition-colors"
+                >
+                  Get a Free Quote
+                </Link>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4">Quick Links</h3>
