@@ -188,6 +188,16 @@ export default function RootLayout({
                       Contact
                     </Link>
                   </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/people/Junk-Be-Gone-LLC/61559612661609/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[var(--color-jbg-red)] transition-colors"
+                    >
+                      Facebook
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -197,7 +207,8 @@ export default function RootLayout({
                 reserved.
               </p>
               <p className="text-sm text-gray-400">
-                We don&apos;t sell or share your data. Your info is only used to provide junk removal services.
+                We don&apos;t sell or share your data. Your info is only used to
+                provide junk removal services.
               </p>
             </div>
           </div>
