@@ -69,32 +69,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-[var(--color-jbg-red)]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="ml-4">
-                    <p className="text-lg font-medium text-white">
-                      Business Hours
-                    </p>
-                    <p className="text-gray-300">Monday - Friday: 8am - 6pm</p>
-                    <p className="text-gray-300">Saturday: 9am - 4pm</p>
-                    <p className="text-gray-300">Sunday: Closed</p>
-                  </div>
-                </div>
+
 
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mt-1">

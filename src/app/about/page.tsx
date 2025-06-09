@@ -186,8 +186,7 @@ export default function AboutPage() {
               </span>
               <span className="text-gray-300">
                 From single-item junk pickups to entire house cleanouts—even
-                hoarding cleanup jobs—we&apos;re up for the challenge. (No hazardous
-                materials or chemicals, though!)
+                hoarding cleanup jobs—we&apos;re up for the challenge.
               </span>
             </li>
           </ul>
