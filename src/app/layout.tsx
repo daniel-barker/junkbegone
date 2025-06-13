@@ -19,6 +19,28 @@ export const metadata: Metadata = {
   title: "Junk Be Gone LLC | Junkouts, Hauling, and more!",
   description:
     "Licensed and insured junk removal services in Indiana. Furniture removal, yard debris, appliances, and more.",
+  openGraph: {
+    title: "Junk Be Gone LLC | Junkouts, Hauling, and more!",
+    description: "Licensed and insured junk removal services in Indiana. Furniture removal, yard debris, appliances, and more.",
+    url: "https://junkbegone317.com",
+    siteName: "Junk Be Gone LLC",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1536,
+        height: 768,
+        alt: "Junk Be Gone LLC",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Junk Be Gone LLC | Junkouts, Hauling, and more!",
+    description: "Licensed and insured junk removal services in Indiana. Furniture removal, yard debris, appliances, and more.",
+    images: ["/images/og-image.png"],
+  },
 };
 
 export default function RootLayout({
