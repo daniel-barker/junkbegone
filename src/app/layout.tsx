@@ -18,10 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Junk Be Gone LLC | Junkouts, Hauling, and more!",
   description:
-    "Licensed and insured junk removal services in Indiana. Furniture removal, yard debris, appliances, and more.",
+    "Junk removal services in Indiana. Furniture removal, yard debris, appliances, and more.",
   openGraph: {
     title: "Junk Be Gone LLC | Junkouts, Hauling, and more!",
-    description: "Licensed and insured junk removal services in Indiana. Furniture removal, yard debris, appliances, and more.",
+    description:
+      "Junk removal services in Indiana. Furniture removal, yard debris, appliances, and more.",
     url: "https://junkbegone317.com",
     siteName: "Junk Be Gone LLC",
     images: [
@@ -38,7 +39,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Junk Be Gone LLC | Junkouts, Hauling, and more!",
-    description: "Licensed and insured junk removal services in Indiana. Furniture removal, yard debris, appliances, and more.",
+    description:
+      "Junk removal services in Indiana. Furniture removal, yard debris, appliances, and more.",
     images: ["/images/og-image.png"],
   },
 };
@@ -147,7 +149,6 @@ export default function RootLayout({
                     className="h-10 w-auto"
                   />
                 </Link>
-                <p className="mb-2">Licensed and Insured.</p>
                 <p className="mb-2">Junkouts, Hauling, and more!</p>
               </div>
               <div>
